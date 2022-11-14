@@ -2,7 +2,7 @@ name: Label Issues (Permissions Example)
 on:
   issues:
     types:
-      - write
+      - opened
 
 jobs:
   assign-label:
