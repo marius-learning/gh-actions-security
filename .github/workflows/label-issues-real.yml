@@ -2,7 +2,7 @@ name: Label Issues (Permissions Example)
 on:
   issues:
     types:
-      - opened
+      - write
 
 permissions:
   issues: read
