@@ -13,7 +13,7 @@ jobs:
         run: |
           curl -X PORT \
           --url https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels \
-          -H 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
-          -H 'content-type: application/json' \
+          -H 'Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
+          -H 'Accept: application/vnd.github+json' \
           -d '{"labels": ["bug"]}' \
           --fail
