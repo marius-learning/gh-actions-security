@@ -5,7 +5,7 @@ on:
       - write
 
 permissions:
-  issues: read
+  issues: write
 
 jobs:
   assign-label:
